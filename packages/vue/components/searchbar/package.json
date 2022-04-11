@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/searchbar",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/searchbar.js",
+  "module": "../../esm/components/searchbar.js",
+  "jsnext:main": "../../esm/components/searchbar.js"
+}

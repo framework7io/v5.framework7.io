@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/nav-left",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/nav-left.js",
+  "module": "../../esm/components/nav-left.js",
+  "jsnext:main": "../../esm/components/nav-left.js"
+}

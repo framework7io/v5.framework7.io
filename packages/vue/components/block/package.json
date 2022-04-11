@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/block",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/block.js",
+  "module": "../../esm/components/block.js",
+  "jsnext:main": "../../esm/components/block.js"
+}

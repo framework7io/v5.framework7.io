@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/appbar",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/appbar.js",
+  "module": "../../esm/components/appbar.js",
+  "jsnext:main": "../../esm/components/appbar.js"
+}

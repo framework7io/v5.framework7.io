@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/panel",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/panel.js",
+  "module": "../../esm/components/panel.js",
+  "jsnext:main": "../../esm/components/panel.js"
+}

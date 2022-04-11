@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/button",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/button.js",
+  "module": "../../esm/components/button.js",
+  "jsnext:main": "../../esm/components/button.js"
+}

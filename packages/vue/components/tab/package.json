@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/tab",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/tab.js",
+  "module": "../../esm/components/tab.js",
+  "jsnext:main": "../../esm/components/tab.js"
+}

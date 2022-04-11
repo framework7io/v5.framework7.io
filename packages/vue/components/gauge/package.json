@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/gauge",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/gauge.js",
+  "module": "../../esm/components/gauge.js",
+  "jsnext:main": "../../esm/components/gauge.js"
+}

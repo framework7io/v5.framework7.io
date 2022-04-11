@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/skeleton-block",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/skeleton-block.js",
+  "module": "../../esm/components/skeleton-block.js",
+  "jsnext:main": "../../esm/components/skeleton-block.js"
+}

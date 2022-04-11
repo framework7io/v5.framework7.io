@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/fab-button",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/fab-button.js",
+  "module": "../../esm/components/fab-button.js",
+  "jsnext:main": "../../esm/components/fab-button.js"
+}

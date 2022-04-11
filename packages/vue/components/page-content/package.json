@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/page-content",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/page-content.js",
+  "module": "../../esm/components/page-content.js",
+  "jsnext:main": "../../esm/components/page-content.js"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/pie-chart",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/pie-chart.js",
+  "module": "../../esm/components/pie-chart.js",
+  "jsnext:main": "../../esm/components/pie-chart.js"
+}

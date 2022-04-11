@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/preloader",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/preloader.js",
+  "module": "../../esm/components/preloader.js",
+  "jsnext:main": "../../esm/components/preloader.js"
+}

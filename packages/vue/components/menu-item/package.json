@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/menu-item",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/menu-item.js",
+  "module": "../../esm/components/menu-item.js",
+  "jsnext:main": "../../esm/components/menu-item.js"
+}

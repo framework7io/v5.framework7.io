@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/fab",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/fab.js",
+  "module": "../../esm/components/fab.js",
+  "jsnext:main": "../../esm/components/fab.js"
+}

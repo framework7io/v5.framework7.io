@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/range",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/range.js",
+  "module": "../../esm/components/range.js",
+  "jsnext:main": "../../esm/components/range.js"
+}

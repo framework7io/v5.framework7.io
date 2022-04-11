@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/navbar",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/navbar.js",
+  "module": "../../esm/components/navbar.js",
+  "jsnext:main": "../../esm/components/navbar.js"
+}

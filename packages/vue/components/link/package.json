@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/link",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/link.js",
+  "module": "../../esm/components/link.js",
+  "jsnext:main": "../../esm/components/link.js"
+}

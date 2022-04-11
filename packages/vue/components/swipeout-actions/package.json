@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/swipeout-actions",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/swipeout-actions.js",
+  "module": "../../esm/components/swipeout-actions.js",
+  "jsnext:main": "../../esm/components/swipeout-actions.js"
+}

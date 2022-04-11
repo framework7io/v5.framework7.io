@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/list-index",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/list-index.js",
+  "module": "../../esm/components/list-index.js",
+  "jsnext:main": "../../esm/components/list-index.js"
+}

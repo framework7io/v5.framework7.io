@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/swiper-slide",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/swiper-slide.js",
+  "module": "../../esm/components/swiper-slide.js",
+  "jsnext:main": "../../esm/components/swiper-slide.js"
+}

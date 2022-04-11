@@ -1,0 +1,514 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>Color Themes | Framework7 Documentation</title><meta property="og:image" content="/i/share-banner.jpg"><meta name="viewport" content="width=device-width, viewport-fit=cover"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@framework7io"><meta name="twitter:creator" content="@framework7io"><meta name="twitter:title" content="Color Themes | Framework7 Documentation"><meta name="twitter:image" content="https://framework7.io/i/share-banner.jpg"><link rel="stylesheet" href="/css/main.css"><link rel="shortcut icon" href="/i/favicon.png"></head><body class="body-docs"><header class="internal-header"><div class="center"><div class="logo-holder"><a class="logo" href="/"></a></div><div class="header-content"><div class="title"><img src="/i/logo-text-red.svg"><div class="version">v5.7.14</div></div><ul class="nav"><li><a href="/docs/">Docs</a><ul><li><a href="/docs/introduction.html">Getting Started</a></li><li class="divider"></li><li><a href="/docs/">Framework7 Core / API</a></li><li><a href="/vue/">Framework7 Vue</a></li><li><a href="/react/">Framework7 React</a></li><li><a href="/svelte/">Framework7 Svelte</a></li><li class="divider"></li><li><a href="https://framework7.io/cli/" target="_blank">Framework7 CLI</a></li><li><a href="https://framework7.io/icons/" target="_blank">Framework7 Icons</a></li><li><a href="/docs/dom7.html">Dom7</a></li><li><a href="https://idangero.us/template7/" target="_blank">Template7</a></li><li class="divider"></li><li><a href="https://framework7.io/cli/release-notes/" target="_blank">Release Notes</a></li></ul></li><li><a href="#">Resources</a><ul><li><a href="https://forum.framework7.io" target="_blank">Community Forum</a></li><li><a href="https://framework7.io/tutorials/" target="_blank">Tutorials</a></li><li><a href="https://framework7.io/templates/" target="_blank">Templates</a></li><li><a href="https://framework7.io/plugins/" target="_blank">Plugins</a></li><li><a href="https://framework7.io/showcase/" target="_blank">Apps Showcase</a></li><li><a href="https://jobs.framework7.io" target="_blank">Jobs & Developers</a></li></ul></li><li><a href="https://blog.framework7.io" target="_blank">Blog</a></li><li><a href="#">Contribute</a><ul><li><a href="https://framework7.io/contribute/" target="_blank">Contribute</a></li><li><a href="https://www.patreon.com/vladimirkharlampidi" target="_blank">Pledge on Patreon</a></li><li><a href="https://teespring.com/stores/framework7" target="_blank">T-Shirt Shop</a></li></ul></li></ul><div class="patreon-github"><a class="patreon-button" href="https://www.patreon.com/vladimirkharlampidi" target="_blank"><span class="patreon-logo"></span><span class="patreon-text">Support Framework7</span></a><div class="github-buttons"><a href="https://github.com/framework7io/framework7/" target="_blank"><i class="f7-icons">logo_github</i></a><a class="gh-stars" href="https://github.com/framework7io/framework7/" target="_blank"><span></span> stars</a><a class="gh-forks" href="https://github.com/framework7io/framework7/" target="_blank"><span></span> forks</a></div></div></div><div class="carbon"><script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=framework7io" id="_carbonads_js"></script></div></div></header><div class="bsa-cpc"></div><main><div class="center"><div class="docs-demo-device"><div class="docs-demo-device-buttons"><a class="active" data-theme="ios"><i class="f7-icons">logo_apple</i></a><a data-theme="md"><i class="f7-icons">logo_android</i></a><a data-theme="aurora"><i class="f7-icons">device_desktop</i></a></div><div class="docs-demo-device-iframe"><iframe width="320" height="548" frameborder="0" scrolling="on"></iframe><div class="fade-overlay"></div></div></div><div class="docs-nav"><div class="docs-nav-toggle"><span></span><span></span><span></span></div><div class="docs-nav-menu"><ul><li><div class="title">Get Started</div><ul><li><a href="introduction.html">Introduction</a></li><li><a href="kitchen-sink.html">Kitchen Sink</a></li><li><a href="installation.html">Installation</a></li><li><a href="package.html">Package Structure</a></li><li><a href="app-layout.html">App HTML Layout</a></li><li><a href="rtl-layout.html">RTL Layout</a></li><li><a href="init-app.html">Initialize App</a></li></ul></li><li><div class="title">Events</div><ul><li><a href="events.html">Events</a></li></ul></li><li><div class="title">Router / Navigation</div><ul><li><a href="routes.html">Routes</a></li><li><a href="router-component.html">Router Component</a></li><li><a href="view.html#router-api-methods-properties">Router API</a></li></ul></li><li><div class="title">Components</div><ul><li><a href="app.html">App / Core</a></li><li><a href="accordion.html">Accordion / Collapsible</a></li><li><a href="action-sheet.html">Action Sheet / Actions</a></li><li><a href="appbar.html">Appbar</a></li><li><a href="autocomplete.html">Autocomplete</a></li><li><a href="badge.html">Badge</a></li><li><a href="block.html">Block / Content Block</a></li><li><a href="button.html">Button</a></li><li><a href="calendar.html">Calendar / Datepicker</a></li><li><a href="cards.html">Cards</a></li><li><a href="checkbox.html">Checkbox</a></li><li><a href="chips.html">Chips / Tags</a></li><li><a href="color-picker.html">Color Picker</a></li><li><a href="contacts-list.html">Contacts List</a></li><li><a href="data-table.html">Data Table</a></li><li><a href="dialog.html">Dialog</a></li><li><a href="elevation.html">Elevation</a></li><li><a href="floating-action-button.html">Floating Action Button / FAB</a></li><li><a href="form.html">Form Data / Storage</a></li><li><a href="gauge.html">Gauge</a></li><li><a href="grid.html">Grid / Layout Grid</a></li><li><a href="icons.html">Icons</a></li><li><a href="infinite-scroll.html">Infinite Scroll</a></li><li><a href="inputs.html">Inputs / Form Inputs</a></li><li><a href="lazy-load.html">Lazy Load</a></li><li><a href="link.html">Link</a></li><li><a href="list-view.html">List View</a></li><li><a href="list-index.html">List Index</a></li><li><a href="login-screen.html">Login Screen</a></li><li><a href="menu.html">Menu</a></li><li><a href="messagebar.html">Messagebar</a></li><li><a href="messages.html">Messages</a></li><li><a href="navbar.html">Navbar</a></li><li><a href="notification.html">Notification</a></li><li><a href="page.html">Page</a></li><li><a href="panel.html">Panel / Side Panels</a></li><li><a href="photo-browser.html">Photo Browser</a></li><li><a href="picker.html">Picker</a></li><li><a href="popover.html">Popover</a></li><li><a href="popup.html">Popup</a></li><li><a href="preloader.html">Preloader</a></li><li><a href="progressbar.html">Progressbar</a></li><li><a href="pull-to-refresh.html">Pull to Refresh</a></li><li><a href="radio.html">Radio</a></li><li><a href="range-slider.html">Range Slider</a></li><li><a href="searchbar.html">Searchbar</a></li><li><a href="sheet-modal.html">Sheet Modal</a></li><li><a href="skeleton.html">Skeleton</a></li><li><a href="smart-select.html">Smart Select</a></li><li><a href="sortable-list.html">Sortable List</a></li><li><a href="statusbar.html">Statusbar</a></li><li><a href="stepper.html">Stepper</a></li><li><a href="subnavbar.html">Subnavbar</a></li><li><a href="swipeout.html">Swipeout</a></li><li><a href="swiper.html">Swiper</a></li><li><a href="tabs.html">Tabs</a></li><li><a href="text-editor.html">Text Editor</a></li><li><a href="timeline.html">Timeline</a></li><li><a href="toast.html">Toast</a></li><li><a href="toggle.html">Toggle</a></li><li><a href="toolbar-tabbar.html">Toolbar / Tabbar</a></li><li><a href="tooltip.html">Tooltip</a></li><li><a href="treeview.html">Treeview</a></li><li><a href="vi.html">Video Intelligence (vi)</a></li><li><a href="view.html">View / Router</a></li><li><a href="virtual-list.html">Virtual List</a></li></ul></li><li><div class="title">Framework7 Icons</div><ul><li><a href="https://framework7.io/icons/">Framework7 Icons Cheatsheet</a></li></ul></li><li><div class="title">Styling</div><ul><li><a href="safe-areas.html">Safe Areas</a></li><li><a href="color-themes.html">Color Themes</a></li><li><a href="typography.html">Typography</a></li><li><a href="hairlines.html">Hairlines</a></li><li><a href="css-variables.html">CSS Variables</a></li></ul></li><li><div class="title">Dom7</div><ul><li><a href="dom7.html">Dom7</a></li></ul></li><li><div class="title">Template7</div><ul><li><a href="template7.html">Template7</a></li></ul></li><li><div class="title">Touch Utilities</div><ul><li><a href="active-state.html">Active State</a></li><li><a href="tap-hold.html">Tap Hold Event (Long Tap)</a></li><li><a href="touch-ripple.html">Touch Ripple</a></li></ul></li><li><div class="title">Utilities</div><ul><li><a href="theme-based-rendering.html">Theme-Based Rendering</a></li><li><a href="request.html">Request / Ajax</a></li><li><a href="utils.html">Utils</a></li><li><a href="device.html">Device</a></li><li><a href="support.html">Support</a></li></ul></li><li><div class="title">Plugins API</div><ul><li><a href="plugins-api.html">Plugins API</a></li></ul></li><li><div class="title">Lazy Modules</div><ul><li><a href="lazy-modules.html">Lazy Modules</a></li></ul></li><li><div class="title">Custom Build</div><ul><li><a href="custom-build.html">Custom Build</a></li></ul></li></ul></div></div><div class="docs-content"><h1>Color Themes</h1><ul class="docs-index"><li><a href="#default-theme-color">Default Theme Color</a></li><li><a href="#colors">Colors</a></li><li><a href="#apply-color-themes">Apply Color Themes</a></li><li><a href="#dark-theme">Dark Theme</a></li><li><a href="#helper-classes">Helper Classes</a></li><li><a href="#primary-color-classes">Primary Color Classes</a></li><li><a href="#custom-color-theme">Custom Color Theme</a></li><li><a href="#generate-color-theme">Generate Color Theme</a></li><li><a href="#css-variables">CSS Variables</a></li></ul><div class="with-device" data-device-preview="../docs-demos/core/color-themes.html"><div class="docs-mobile-preview-links"><a class="mobile-preview-ios" href="../docs-demos/core/color-themes.html?theme=ios" target="_blank"></a><a class="mobile-preview-md" href="../docs-demos/core/color-themes.html?theme=md" target="_blank"></a><a class="mobile-preview-aurora" href="../docs-demos/core/color-themes.html?theme=aurora" target="_blank"></a></div><h2 id="default-theme-color">Default Theme Color</h2><p>Default theme color is set to the following:</p><p><b>#007aff</b></p><div class="color-example" style="background-color: #007aff"></div><h2 id="colors">Colors</h2><p>Framework7 comes with 15 ready to use additional color themes.</p><table><tbody><tr><td><b>red</b></td><td><div class="color-example" style="background-color: #ff3b30"></div><div><b>#ff3b30</b></div></td></tr><tr><td><b>green</b></td><td><div class="color-example" style="background-color: #4cd964"></div><div><b>#4cd964</b></div></td></tr><tr><td><b>blue</b></td><td><div class="color-example" style="background-color: #2196f3"></div><div><b>#2196f3</b></div></td></tr><tr><td><b>pink</b></td><td><div class="color-example" style="background-color: #ff2d55"></div><div><b>#ff2d55</b></div></td></tr><tr><td><b>yellow</b></td><td><div class="color-example" style="background-color: #ffcc00"></div><div><b>#ffcc00</b></div></td></tr><tr><td><b>orange</b></td><td><div class="color-example" style="background-color: #ff9500"></div><div><b>#ff9500</b></div></td></tr><tr><td><b>purple</b></td><td><div class="color-example" style="background-color: #9c27b0"></div><div><b>#9c27b0</b></div></td></tr><tr><td><b>deeppurple</b></td><td><div class="color-example" style="background-color: #673ab7"></div><div><b>#673ab7</b></div></td></tr><tr><td><b>lightblue</b></td><td><div class="color-example" style="background-color: #5ac8fa"></div><div><b>#5ac8fa</b></div></td></tr><tr><td><b>teal</b></td><td><div class="color-example" style="background-color: #009688"></div><div><b>#009688</b></div></td></tr><tr><td><b>lime</b></td><td><div class="color-example" style="background-color: #cddc39"></div><div><b>#cddc39</b></div></td></tr><tr><td><b>deeporange</b></td><td><div class="color-example" style="background-color: #ff6b22"></div><div><b>#ff6b22</b></div></td></tr><tr><td><b>gray</b></td><td><div class="color-example" style="background-color: #8e8e93"></div><div><b>#8e8e93</b></div></td></tr><tr><td><b>white</b></td><td><div class="color-example" style="background-color: #ffffff"></div><div><b>#ffffff</b></div></td></tr><tr><td><b>black</b></td><td><div class="color-example" style="background-color: #000000"></div><div><b>#000000</b></div></td></tr></tbody></table><h2 id="apply-color-themes">Apply Color Themes</h2><p>It is easy to apply color themes. All you need is just to add <code>color-theme-[color]</code> class to the required parent element. It could be body, app root, view, page, navbar, toolbar, list-block, etc. For example:</p><pre><code class="html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>color-theme-red<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    ...
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>page color-theme-green<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    ...
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>list-block color-theme-pink<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    ...
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>navbar color-theme-orange<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    ...
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>segmented color-theme-yellow<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    ...
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre><div class="important-note"><p>Note, that applied color theme affects only interractive elements such as links, buttons, form elements, icons. It doesn't change basic text color or background colors on other blocks.</p></div><h2 id="dark-theme">Dark Theme</h2><p>Framework7 also has additional dark theme layout. To apply dark theme we need to add <code>theme-dark</code> class to the required parent element. It could be body, app root, view, page, navbar, toolbar, list-block, etc. For example:</p><pre><code class="html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>theme-dark<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    ...
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>theme-dark<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    ...
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>page theme-dark<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    ...
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>list-block theme-dark<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    ...
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+</code></pre></div><h2 id="helper-classes">Helper Classes</h2><p>There are also additional helper classes that could be used without/outside color themes:</p><ul><li><p><code>color-[color]</code> - if you want to change color of individual button, link or icon, for example:</p><pre><code class="html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button color-red<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Red button<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span></code></pre></li><li><p><code>text-color-[color]</code> - if you want to change text color of required element:</p><pre><code class="html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text-color-red<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Red color text<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span></code></pre></li><li><p><code>bg-color-[color]</code> - if you want quickly to set predefined background color on some block or element:</p><pre><code class="html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>badge bg-color-pink<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>14<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">></span></span> - pink badge</code></pre></li><li><p><code>border-color-[color]</code> - if you want to set predefined border color:</p><pre><code class="html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button border-color-red<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre></li></ul><p>And of course, you can mix these helper classes:</p><pre><code class="html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>button bg-color-blue text-color-white border-color-gray<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span>
+</code></pre><h2 id="primary-color-classes">Primary Color Classes</h2><p>Helper classes support additional <code>primary</code> color which is equal to context color theme.</p><ul><li><p><code>text-color-primary</code> - to change text color of element to theme color.</p></li><li><p><code>bg-color-primary</code> - to change background color of element to theme color.</p></li><li><p><code>border-color-primary</code> - to change border color of element to theme color.</p></li></ul><h2 id="custom-color-theme">Custom Color Theme</h2><p>To set custom color theme, we need to specify few CSS variables:</p><ul><li><code>--f7-theme-color</code> — HEX value of theme color.</li><li><code>--f7-theme-color-shade</code> — 8% darken theme color. Required, for example, for pressed buttons state.</li><li><code>--f7-theme-color-tint</code> — 8% lighten theme color. Required, for example, for pressed buttons state.</li><li><code>--f7-theme-color-rgb</code> — RGB value of theme color. Required for semitransparent elements.</li></ul><p>For example, if custom theme color is #f00 (red), we just need to add following variables to our CSS:</p><pre><code class="css"><span class="token selector">:root</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #f00" class="code-color"></span>#f00<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #d60000" class="code-color"></span>#d60000<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #ff2929" class="code-color"></span>#ff2929<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 255<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre><p>There is also new <a href="utils.html#colorthemecssproperties">colorThemeCSSProperties</a> util that can generate required CSS variables:</p><pre><code class="js"><span class="token comment">/* Generate CSS variables for red theme color */</span>
+app<span class="token punctuation">.</span>utils<span class="token punctuation">.</span><span class="token function">colorThemeCSSProperties</span><span class="token punctuation">(</span><span class="token string">'#f00'</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre><p>It will return the following object:</p><pre><code class="js"><span class="token punctuation">{</span>
+  <span class="token string">"--f7-theme-color"</span><span class="token operator">:</span> <span class="token string">"#f00"</span><span class="token punctuation">,</span>
+  <span class="token string">"--f7-theme-color-rgb"</span><span class="token operator">:</span> <span class="token string">"255, 0, 0"</span><span class="token punctuation">,</span>
+  <span class="token string">"--f7-theme-color-shade"</span><span class="token operator">:</span> <span class="token string">"#d60000"</span><span class="token punctuation">,</span>
+  <span class="token string">"--f7-theme-color-tint"</span><span class="token operator">:</span> <span class="token string">"#ff2929"</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="with-device with-device-inline"><h2 id="generate-color-theme">Generate Color Theme</h2><div class="docs-demo-device docs-inline-device"><div class="docs-demo-device-buttons"><a class="active" data-theme="ios"><i class="f7-icons">logo_apple</i></a><a data-theme="md"><i class="f7-icons">logo_android</i></a><a data-theme="aurora"><i class="f7-icons">device_desktop</i></a></div><div class="docs-demo-device-iframe"><iframe width="320" height="548" frameborder="0" scrolling="on" src="/docs-demos/core/color-themes-generate.html"></iframe><div class="fade-overlay"></div></div></div><form class="docs-color-form"><fieldset class="docs-color-form-col"><p><b>Layout Theme</b></p><label class="docs-color-form-radio"><input name="theme" value="light" type="radio" checked><span>Light</span></label><label class="docs-color-form-radio"><input name="theme" value="dark" type="radio"><span>Dark</span></label></fieldset><fieldset class="docs-color-form-col"><p><b>Navigation Bars Style</b></p><label class="docs-color-form-radio"><input name="bars" value="empty" type="radio" checked><span>Empty</span></label><label class="docs-color-form-radio"><input name="bars" value="fill" type="radio"><span>Fill</span></label></fieldset><fieldset><p><b>Color</b></p><p><label class="docs-color-form-input"><span>HEX Color</span><input type="text" name="color" placeholder="#ff0000"></label></p></fieldset></form><h4>Generated Styles</h4><p>Copy following CSS styles to your app's styles:</p><pre class="docs-color-form-code">
+<code class="css"><span class="token comment">/*<br>  Change color or navigation bars style to see genearted styles<br>*/</span></code>
+</pre></div><h2 id="css-variables">CSS Variables</h2><pre><code class="css"><span class="token comment">/*====================
+  Primary Theme
+  ==================== */</span>
+<span class="token selector">.text-color-primary</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-text-color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--f7-theme-color<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.bg-color-primary</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-bg-color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--f7-theme-color<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.border-color-primary</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-border-color</span><span class="token punctuation">:</span> <span class="token function">var</span><span class="token punctuation">(</span>--f7-theme-color<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.ripple-color-primary</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-ripple-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span><span class="token function">var</span><span class="token punctuation">(</span>--f7-theme-color-rgb<span class="token punctuation">)</span><span class="token punctuation">,</span> 0.3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">/*====================
+  Colors List
+  ==================== */</span>
+<span class="token selector">:root</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-color-red</span><span class="token punctuation">:</span> <span style="background-color: #ff3b30" class="code-color"></span>#ff3b30<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-red-rgb</span><span class="token punctuation">:</span> 255<span class="token punctuation">,</span> 59<span class="token punctuation">,</span> 48<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-red-shade</span><span class="token punctuation">:</span> <span style="background-color: #ff1407" class="code-color"></span>#ff1407<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-red-tint</span><span class="token punctuation">:</span> <span style="background-color: #ff6259" class="code-color"></span>#ff6259<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-green</span><span class="token punctuation">:</span> <span style="background-color: #4cd964" class="code-color"></span>#4cd964<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-green-rgb</span><span class="token punctuation">:</span> 76<span class="token punctuation">,</span> 217<span class="token punctuation">,</span> 100<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-green-shade</span><span class="token punctuation">:</span> <span style="background-color: #2cd048" class="code-color"></span>#2cd048<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-green-tint</span><span class="token punctuation">:</span> <span style="background-color: #6ee081" class="code-color"></span>#6ee081<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-blue</span><span class="token punctuation">:</span> <span style="background-color: #2196f3" class="code-color"></span>#2196f3<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-blue-rgb</span><span class="token punctuation">:</span> 33<span class="token punctuation">,</span> 150<span class="token punctuation">,</span> 243<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-blue-shade</span><span class="token punctuation">:</span> <span style="background-color: #0c82df" class="code-color"></span>#0c82df<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-blue-tint</span><span class="token punctuation">:</span> <span style="background-color: #48a8f5" class="code-color"></span>#48a8f5<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-pink</span><span class="token punctuation">:</span> <span style="background-color: #ff2d55" class="code-color"></span>#ff2d55<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-pink-rgb</span><span class="token punctuation">:</span> 255<span class="token punctuation">,</span> 45<span class="token punctuation">,</span> 85<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-pink-shade</span><span class="token punctuation">:</span> <span style="background-color: #ff0434" class="code-color"></span>#ff0434<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-pink-tint</span><span class="token punctuation">:</span> <span style="background-color: #ff5676" class="code-color"></span>#ff5676<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-yellow</span><span class="token punctuation">:</span> <span style="background-color: #ffcc00" class="code-color"></span>#ffcc00<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-yellow-rgb</span><span class="token punctuation">:</span> 255<span class="token punctuation">,</span> 204<span class="token punctuation">,</span> 0<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-yellow-shade</span><span class="token punctuation">:</span> <span style="background-color: #d6ab00" class="code-color"></span>#d6ab00<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-yellow-tint</span><span class="token punctuation">:</span> <span style="background-color: #ffd429" class="code-color"></span>#ffd429<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-orange</span><span class="token punctuation">:</span> <span style="background-color: #ff9500" class="code-color"></span>#ff9500<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-orange-rgb</span><span class="token punctuation">:</span> 255<span class="token punctuation">,</span> 149<span class="token punctuation">,</span> 0<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-orange-shade</span><span class="token punctuation">:</span> <span style="background-color: #d67d00" class="code-color"></span>#d67d00<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-orange-tint</span><span class="token punctuation">:</span> <span style="background-color: #ffa629" class="code-color"></span>#ffa629<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-purple</span><span class="token punctuation">:</span> <span style="background-color: #9c27b0" class="code-color"></span>#9c27b0<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-purple-rgb</span><span class="token punctuation">:</span> 156<span class="token punctuation">,</span> 39<span class="token punctuation">,</span> 176<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-purple-shade</span><span class="token punctuation">:</span> <span style="background-color: #7e208f" class="code-color"></span>#7e208f<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-purple-tint</span><span class="token punctuation">:</span> <span style="background-color: #b92fd1" class="code-color"></span>#b92fd1<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-deeppurple</span><span class="token punctuation">:</span> <span style="background-color: #673ab7" class="code-color"></span>#673ab7<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-deeppurple-rgb</span><span class="token punctuation">:</span> 103<span class="token punctuation">,</span> 58<span class="token punctuation">,</span> 183<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-deeppurple-shade</span><span class="token punctuation">:</span> <span style="background-color: #563098" class="code-color"></span>#563098<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-deeppurple-tint</span><span class="token punctuation">:</span> <span style="background-color: #7c52c8" class="code-color"></span>#7c52c8<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-lightblue</span><span class="token punctuation">:</span> <span style="background-color: #5ac8fa" class="code-color"></span>#5ac8fa<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-lightblue-rgb</span><span class="token punctuation">:</span> 90<span class="token punctuation">,</span> 200<span class="token punctuation">,</span> 250<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-lightblue-shade</span><span class="token punctuation">:</span> <span style="background-color: #32bbf9" class="code-color"></span>#32bbf9<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-lightblue-tint</span><span class="token punctuation">:</span> <span style="background-color: #82d5fb" class="code-color"></span>#82d5fb<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-teal</span><span class="token punctuation">:</span> <span style="background-color: #009688" class="code-color"></span>#009688<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-teal-rgb</span><span class="token punctuation">:</span> 0<span class="token punctuation">,</span> 150<span class="token punctuation">,</span> 136<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-teal-shade</span><span class="token punctuation">:</span> <span style="background-color: #006d63" class="code-color"></span>#006d63<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-teal-tint</span><span class="token punctuation">:</span> <span style="background-color: #00bfad" class="code-color"></span>#00bfad<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-lime</span><span class="token punctuation">:</span> <span style="background-color: #cddc39" class="code-color"></span>#cddc39<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-lime-rgb</span><span class="token punctuation">:</span> 205<span class="token punctuation">,</span> 220<span class="token punctuation">,</span> 57<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-lime-shade</span><span class="token punctuation">:</span> <span style="background-color: #bac923" class="code-color"></span>#bac923<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-lime-tint</span><span class="token punctuation">:</span> <span style="background-color: #d6e25c" class="code-color"></span>#d6e25c<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-deeporange</span><span class="token punctuation">:</span> <span style="background-color: #ff6b22" class="code-color"></span>#ff6b22<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-deeporange-rgb</span><span class="token punctuation">:</span> 255<span class="token punctuation">,</span> 107<span class="token punctuation">,</span> 34<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-deeporange-shade</span><span class="token punctuation">:</span> <span style="background-color: #f85200" class="code-color"></span>#f85200<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-deeporange-tint</span><span class="token punctuation">:</span> <span style="background-color: #ff864b" class="code-color"></span>#ff864b<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-gray</span><span class="token punctuation">:</span> <span style="background-color: #8e8e93" class="code-color"></span>#8e8e93<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-gray-rgb</span><span class="token punctuation">:</span> 142<span class="token punctuation">,</span> 142<span class="token punctuation">,</span> 147<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-gray-shade</span><span class="token punctuation">:</span> <span style="background-color: #79797f" class="code-color"></span>#79797f<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-gray-tint</span><span class="token punctuation">:</span> <span style="background-color: #a3a3a7" class="code-color"></span>#a3a3a7<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-white</span><span class="token punctuation">:</span> <span style="background-color: #ffffff" class="code-color"></span>#ffffff<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-white-rgb</span><span class="token punctuation">:</span> 255<span class="token punctuation">,</span> 255<span class="token punctuation">,</span> 255<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-white-shade</span><span class="token punctuation">:</span> <span style="background-color: #ebebeb" class="code-color"></span>#ebebeb<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-white-tint</span><span class="token punctuation">:</span> <span style="background-color: #ffffff" class="code-color"></span>#ffffff<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-black</span><span class="token punctuation">:</span> <span style="background-color: #000000" class="code-color"></span>#000000<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-black-rgb</span><span class="token punctuation">:</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-black-shade</span><span class="token punctuation">:</span> <span style="background-color: #000000" class="code-color"></span>#000000<span class="token punctuation">;</span>
+  <span class="token property">--f7-color-black-tint</span><span class="token punctuation">:</span> <span style="background-color: #141414" class="code-color"></span>#141414<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">/*====================
+  Color Themes
+  ==================== */</span>
+<span class="token selector">.color-theme-red</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #ff3b30" class="code-color"></span>#ff3b30<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 255<span class="token punctuation">,</span> 59<span class="token punctuation">,</span> 48<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #ff1407" class="code-color"></span>#ff1407<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #ff6259" class="code-color"></span>#ff6259<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.color-theme-green</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #4cd964" class="code-color"></span>#4cd964<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 76<span class="token punctuation">,</span> 217<span class="token punctuation">,</span> 100<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #2cd048" class="code-color"></span>#2cd048<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #6ee081" class="code-color"></span>#6ee081<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.color-theme-blue</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #2196f3" class="code-color"></span>#2196f3<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 33<span class="token punctuation">,</span> 150<span class="token punctuation">,</span> 243<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #0c82df" class="code-color"></span>#0c82df<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #48a8f5" class="code-color"></span>#48a8f5<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.color-theme-pink</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #ff2d55" class="code-color"></span>#ff2d55<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 255<span class="token punctuation">,</span> 45<span class="token punctuation">,</span> 85<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #ff0434" class="code-color"></span>#ff0434<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #ff5676" class="code-color"></span>#ff5676<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.color-theme-yellow</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #ffcc00" class="code-color"></span>#ffcc00<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 255<span class="token punctuation">,</span> 204<span class="token punctuation">,</span> 0<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #d6ab00" class="code-color"></span>#d6ab00<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #ffd429" class="code-color"></span>#ffd429<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.color-theme-orange</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #ff9500" class="code-color"></span>#ff9500<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 255<span class="token punctuation">,</span> 149<span class="token punctuation">,</span> 0<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #d67d00" class="code-color"></span>#d67d00<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #ffa629" class="code-color"></span>#ffa629<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.color-theme-purple</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #9c27b0" class="code-color"></span>#9c27b0<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 156<span class="token punctuation">,</span> 39<span class="token punctuation">,</span> 176<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #7e208f" class="code-color"></span>#7e208f<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #b92fd1" class="code-color"></span>#b92fd1<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.color-theme-deeppurple</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #673ab7" class="code-color"></span>#673ab7<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 103<span class="token punctuation">,</span> 58<span class="token punctuation">,</span> 183<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #563098" class="code-color"></span>#563098<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #7c52c8" class="code-color"></span>#7c52c8<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.color-theme-lightblue</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #5ac8fa" class="code-color"></span>#5ac8fa<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 90<span class="token punctuation">,</span> 200<span class="token punctuation">,</span> 250<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #32bbf9" class="code-color"></span>#32bbf9<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #82d5fb" class="code-color"></span>#82d5fb<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.color-theme-teal</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #009688" class="code-color"></span>#009688<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 0<span class="token punctuation">,</span> 150<span class="token punctuation">,</span> 136<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #006d63" class="code-color"></span>#006d63<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #00bfad" class="code-color"></span>#00bfad<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.color-theme-lime</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #cddc39" class="code-color"></span>#cddc39<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 205<span class="token punctuation">,</span> 220<span class="token punctuation">,</span> 57<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #bac923" class="code-color"></span>#bac923<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #d6e25c" class="code-color"></span>#d6e25c<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.color-theme-deeporange</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #ff6b22" class="code-color"></span>#ff6b22<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 255<span class="token punctuation">,</span> 107<span class="token punctuation">,</span> 34<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #f85200" class="code-color"></span>#f85200<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #ff864b" class="code-color"></span>#ff864b<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.color-theme-gray</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #8e8e93" class="code-color"></span>#8e8e93<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 142<span class="token punctuation">,</span> 142<span class="token punctuation">,</span> 147<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #79797f" class="code-color"></span>#79797f<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #a3a3a7" class="code-color"></span>#a3a3a7<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.color-theme-white</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #ffffff" class="code-color"></span>#ffffff<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 255<span class="token punctuation">,</span> 255<span class="token punctuation">,</span> 255<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #ebebeb" class="code-color"></span>#ebebeb<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #ffffff" class="code-color"></span>#ffffff<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.color-theme-black</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #000000" class="code-color"></span>#000000<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #000000" class="code-color"></span>#000000<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #141414" class="code-color"></span>#141414<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">/*====================
+  Color Overrides
+  ==================== */</span>
+<span class="token selector">.color-red</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #ff3b30" class="code-color"></span>#ff3b30<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 255<span class="token punctuation">,</span> 59<span class="token punctuation">,</span> 48<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #ff1407" class="code-color"></span>#ff1407<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #ff6259" class="code-color"></span>#ff6259<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.text-color-red</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-text-color</span><span class="token punctuation">:</span> <span style="background-color: #ff3b30" class="code-color"></span>#ff3b30<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.bg-color-red</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-bg-color</span><span class="token punctuation">:</span> <span style="background-color: #ff3b30" class="code-color"></span>#ff3b30<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.border-color-red</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-border-color</span><span class="token punctuation">:</span> <span style="background-color: #ff3b30" class="code-color"></span>#ff3b30<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.ripple-color-red,
+.ripple-red</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-ripple-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>255<span class="token punctuation">,</span> 59<span class="token punctuation">,</span> 48<span class="token punctuation">,</span> 0.3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.color-green</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #4cd964" class="code-color"></span>#4cd964<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 76<span class="token punctuation">,</span> 217<span class="token punctuation">,</span> 100<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #2cd048" class="code-color"></span>#2cd048<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #6ee081" class="code-color"></span>#6ee081<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.text-color-green</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-text-color</span><span class="token punctuation">:</span> <span style="background-color: #4cd964" class="code-color"></span>#4cd964<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.bg-color-green</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-bg-color</span><span class="token punctuation">:</span> <span style="background-color: #4cd964" class="code-color"></span>#4cd964<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.border-color-green</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-border-color</span><span class="token punctuation">:</span> <span style="background-color: #4cd964" class="code-color"></span>#4cd964<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.ripple-color-green,
+.ripple-green</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-ripple-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>76<span class="token punctuation">,</span> 217<span class="token punctuation">,</span> 100<span class="token punctuation">,</span> 0.3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.color-blue</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #2196f3" class="code-color"></span>#2196f3<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 33<span class="token punctuation">,</span> 150<span class="token punctuation">,</span> 243<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #0c82df" class="code-color"></span>#0c82df<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #48a8f5" class="code-color"></span>#48a8f5<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.text-color-blue</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-text-color</span><span class="token punctuation">:</span> <span style="background-color: #2196f3" class="code-color"></span>#2196f3<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.bg-color-blue</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-bg-color</span><span class="token punctuation">:</span> <span style="background-color: #2196f3" class="code-color"></span>#2196f3<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.border-color-blue</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-border-color</span><span class="token punctuation">:</span> <span style="background-color: #2196f3" class="code-color"></span>#2196f3<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.ripple-color-blue,
+.ripple-blue</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-ripple-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>33<span class="token punctuation">,</span> 150<span class="token punctuation">,</span> 243<span class="token punctuation">,</span> 0.3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.color-pink</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #ff2d55" class="code-color"></span>#ff2d55<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 255<span class="token punctuation">,</span> 45<span class="token punctuation">,</span> 85<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #ff0434" class="code-color"></span>#ff0434<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #ff5676" class="code-color"></span>#ff5676<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.text-color-pink</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-text-color</span><span class="token punctuation">:</span> <span style="background-color: #ff2d55" class="code-color"></span>#ff2d55<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.bg-color-pink</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-bg-color</span><span class="token punctuation">:</span> <span style="background-color: #ff2d55" class="code-color"></span>#ff2d55<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.border-color-pink</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-border-color</span><span class="token punctuation">:</span> <span style="background-color: #ff2d55" class="code-color"></span>#ff2d55<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.ripple-color-pink,
+.ripple-pink</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-ripple-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>255<span class="token punctuation">,</span> 45<span class="token punctuation">,</span> 85<span class="token punctuation">,</span> 0.3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.color-yellow</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #ffcc00" class="code-color"></span>#ffcc00<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 255<span class="token punctuation">,</span> 204<span class="token punctuation">,</span> 0<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #d6ab00" class="code-color"></span>#d6ab00<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #ffd429" class="code-color"></span>#ffd429<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.text-color-yellow</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-text-color</span><span class="token punctuation">:</span> <span style="background-color: #ffcc00" class="code-color"></span>#ffcc00<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.bg-color-yellow</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-bg-color</span><span class="token punctuation">:</span> <span style="background-color: #ffcc00" class="code-color"></span>#ffcc00<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.border-color-yellow</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-border-color</span><span class="token punctuation">:</span> <span style="background-color: #ffcc00" class="code-color"></span>#ffcc00<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.ripple-color-yellow,
+.ripple-yellow</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-ripple-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>255<span class="token punctuation">,</span> 204<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.color-orange</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #ff9500" class="code-color"></span>#ff9500<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 255<span class="token punctuation">,</span> 149<span class="token punctuation">,</span> 0<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #d67d00" class="code-color"></span>#d67d00<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #ffa629" class="code-color"></span>#ffa629<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.text-color-orange</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-text-color</span><span class="token punctuation">:</span> <span style="background-color: #ff9500" class="code-color"></span>#ff9500<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.bg-color-orange</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-bg-color</span><span class="token punctuation">:</span> <span style="background-color: #ff9500" class="code-color"></span>#ff9500<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.border-color-orange</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-border-color</span><span class="token punctuation">:</span> <span style="background-color: #ff9500" class="code-color"></span>#ff9500<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.ripple-color-orange,
+.ripple-orange</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-ripple-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>255<span class="token punctuation">,</span> 149<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.color-purple</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #9c27b0" class="code-color"></span>#9c27b0<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 156<span class="token punctuation">,</span> 39<span class="token punctuation">,</span> 176<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #7e208f" class="code-color"></span>#7e208f<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #b92fd1" class="code-color"></span>#b92fd1<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.text-color-purple</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-text-color</span><span class="token punctuation">:</span> <span style="background-color: #9c27b0" class="code-color"></span>#9c27b0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.bg-color-purple</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-bg-color</span><span class="token punctuation">:</span> <span style="background-color: #9c27b0" class="code-color"></span>#9c27b0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.border-color-purple</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-border-color</span><span class="token punctuation">:</span> <span style="background-color: #9c27b0" class="code-color"></span>#9c27b0<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.ripple-color-purple,
+.ripple-purple</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-ripple-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>156<span class="token punctuation">,</span> 39<span class="token punctuation">,</span> 176<span class="token punctuation">,</span> 0.3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.color-deeppurple</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #673ab7" class="code-color"></span>#673ab7<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 103<span class="token punctuation">,</span> 58<span class="token punctuation">,</span> 183<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #563098" class="code-color"></span>#563098<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #7c52c8" class="code-color"></span>#7c52c8<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.text-color-deeppurple</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-text-color</span><span class="token punctuation">:</span> <span style="background-color: #673ab7" class="code-color"></span>#673ab7<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.bg-color-deeppurple</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-bg-color</span><span class="token punctuation">:</span> <span style="background-color: #673ab7" class="code-color"></span>#673ab7<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.border-color-deeppurple</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-border-color</span><span class="token punctuation">:</span> <span style="background-color: #673ab7" class="code-color"></span>#673ab7<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.ripple-color-deeppurple,
+.ripple-deeppurple</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-ripple-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>103<span class="token punctuation">,</span> 58<span class="token punctuation">,</span> 183<span class="token punctuation">,</span> 0.3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.color-lightblue</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #5ac8fa" class="code-color"></span>#5ac8fa<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 90<span class="token punctuation">,</span> 200<span class="token punctuation">,</span> 250<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #32bbf9" class="code-color"></span>#32bbf9<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #82d5fb" class="code-color"></span>#82d5fb<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.text-color-lightblue</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-text-color</span><span class="token punctuation">:</span> <span style="background-color: #5ac8fa" class="code-color"></span>#5ac8fa<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.bg-color-lightblue</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-bg-color</span><span class="token punctuation">:</span> <span style="background-color: #5ac8fa" class="code-color"></span>#5ac8fa<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.border-color-lightblue</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-border-color</span><span class="token punctuation">:</span> <span style="background-color: #5ac8fa" class="code-color"></span>#5ac8fa<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.ripple-color-lightblue,
+.ripple-lightblue</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-ripple-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>90<span class="token punctuation">,</span> 200<span class="token punctuation">,</span> 250<span class="token punctuation">,</span> 0.3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.color-teal</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #009688" class="code-color"></span>#009688<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 0<span class="token punctuation">,</span> 150<span class="token punctuation">,</span> 136<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #006d63" class="code-color"></span>#006d63<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #00bfad" class="code-color"></span>#00bfad<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.text-color-teal</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-text-color</span><span class="token punctuation">:</span> <span style="background-color: #009688" class="code-color"></span>#009688<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.bg-color-teal</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-bg-color</span><span class="token punctuation">:</span> <span style="background-color: #009688" class="code-color"></span>#009688<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.border-color-teal</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-border-color</span><span class="token punctuation">:</span> <span style="background-color: #009688" class="code-color"></span>#009688<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.ripple-color-teal,
+.ripple-teal</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-ripple-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 150<span class="token punctuation">,</span> 136<span class="token punctuation">,</span> 0.3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.color-lime</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #cddc39" class="code-color"></span>#cddc39<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 205<span class="token punctuation">,</span> 220<span class="token punctuation">,</span> 57<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #bac923" class="code-color"></span>#bac923<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #d6e25c" class="code-color"></span>#d6e25c<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.text-color-lime</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-text-color</span><span class="token punctuation">:</span> <span style="background-color: #cddc39" class="code-color"></span>#cddc39<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.bg-color-lime</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-bg-color</span><span class="token punctuation">:</span> <span style="background-color: #cddc39" class="code-color"></span>#cddc39<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.border-color-lime</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-border-color</span><span class="token punctuation">:</span> <span style="background-color: #cddc39" class="code-color"></span>#cddc39<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.ripple-color-lime,
+.ripple-lime</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-ripple-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>205<span class="token punctuation">,</span> 220<span class="token punctuation">,</span> 57<span class="token punctuation">,</span> 0.3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.color-deeporange</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #ff6b22" class="code-color"></span>#ff6b22<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 255<span class="token punctuation">,</span> 107<span class="token punctuation">,</span> 34<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #f85200" class="code-color"></span>#f85200<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #ff864b" class="code-color"></span>#ff864b<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.text-color-deeporange</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-text-color</span><span class="token punctuation">:</span> <span style="background-color: #ff6b22" class="code-color"></span>#ff6b22<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.bg-color-deeporange</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-bg-color</span><span class="token punctuation">:</span> <span style="background-color: #ff6b22" class="code-color"></span>#ff6b22<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.border-color-deeporange</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-border-color</span><span class="token punctuation">:</span> <span style="background-color: #ff6b22" class="code-color"></span>#ff6b22<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.ripple-color-deeporange,
+.ripple-deeporange</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-ripple-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>255<span class="token punctuation">,</span> 107<span class="token punctuation">,</span> 34<span class="token punctuation">,</span> 0.3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.color-gray</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #8e8e93" class="code-color"></span>#8e8e93<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 142<span class="token punctuation">,</span> 142<span class="token punctuation">,</span> 147<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #79797f" class="code-color"></span>#79797f<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #a3a3a7" class="code-color"></span>#a3a3a7<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.text-color-gray</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-text-color</span><span class="token punctuation">:</span> <span style="background-color: #8e8e93" class="code-color"></span>#8e8e93<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.bg-color-gray</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-bg-color</span><span class="token punctuation">:</span> <span style="background-color: #8e8e93" class="code-color"></span>#8e8e93<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.border-color-gray</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-border-color</span><span class="token punctuation">:</span> <span style="background-color: #8e8e93" class="code-color"></span>#8e8e93<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.ripple-color-gray,
+.ripple-gray</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-ripple-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>142<span class="token punctuation">,</span> 142<span class="token punctuation">,</span> 147<span class="token punctuation">,</span> 0.3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.color-white</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #ffffff" class="code-color"></span>#ffffff<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 255<span class="token punctuation">,</span> 255<span class="token punctuation">,</span> 255<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #ebebeb" class="code-color"></span>#ebebeb<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #ffffff" class="code-color"></span>#ffffff<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.text-color-white</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-text-color</span><span class="token punctuation">:</span> <span style="background-color: #ffffff" class="code-color"></span>#ffffff<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.bg-color-white</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-bg-color</span><span class="token punctuation">:</span> <span style="background-color: #ffffff" class="code-color"></span>#ffffff<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.border-color-white</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-border-color</span><span class="token punctuation">:</span> <span style="background-color: #ffffff" class="code-color"></span>#ffffff<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.ripple-color-white,
+.ripple-white</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-ripple-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>255<span class="token punctuation">,</span> 255<span class="token punctuation">,</span> 255<span class="token punctuation">,</span> 0.3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.color-black</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color</span><span class="token punctuation">:</span> <span style="background-color: #000000" class="code-color"></span>#000000<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-rgb</span><span class="token punctuation">:</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-shade</span><span class="token punctuation">:</span> <span style="background-color: #000000" class="code-color"></span>#000000<span class="token punctuation">;</span>
+  <span class="token property">--f7-theme-color-tint</span><span class="token punctuation">:</span> <span style="background-color: #141414" class="code-color"></span>#141414<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.text-color-black</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-text-color</span><span class="token punctuation">:</span> <span style="background-color: #000000" class="code-color"></span>#000000<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.bg-color-black</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-bg-color</span><span class="token punctuation">:</span> <span style="background-color: #000000" class="code-color"></span>#000000<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.border-color-black</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-border-color</span><span class="token punctuation">:</span> <span style="background-color: #000000" class="code-color"></span>#000000<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.ripple-color-black,
+.ripple-black</span> <span class="token punctuation">{</span>
+  <span class="token property">--f7-theme-color-ripple-color</span><span class="token punctuation">:</span> <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div></div></main><script src="/js/main.js"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1LNSQ30M9K"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-1LNSQ30M9K');</script></body></html>

@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/nav-title",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/nav-title.js",
+  "module": "../../esm/components/nav-title.js",
+  "jsnext:main": "../../esm/components/nav-title.js"
+}

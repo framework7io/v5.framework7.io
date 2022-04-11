@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/block-header",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/block-header.js",
+  "module": "../../esm/components/block-header.js",
+  "jsnext:main": "../../esm/components/block-header.js"
+}

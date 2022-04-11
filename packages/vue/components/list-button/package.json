@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/list-button",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/list-button.js",
+  "module": "../../esm/components/list-button.js",
+  "jsnext:main": "../../esm/components/list-button.js"
+}

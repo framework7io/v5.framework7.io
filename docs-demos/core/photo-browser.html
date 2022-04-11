@@ -1,0 +1,126 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><title>My App</title><link rel="stylesheet" href="../../packages/core/css/framework7.bundle.min.css"><link rel="stylesheet" href="../../css/framework7-icons.css"><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></head><body><div id="app"><div class="view view-main view-init"><div class="page"><div class="navbar"><div class="navbar-bg"></div><div class="navbar-inner"><div class="left"></div><div class="title sliding">Photo Browser</div><div class="right"></div></div></div><div class="page-content"><div class="block-title">Light Theme</div><div class="block row"><div class="col-33"><a class="button button-fill pb-standalone" href="#">Standalone</a></div><div class="col-33"><a class="button button-fill pb-popup" href="#">Popup</a></div><div class="col-33"><a class="button button-fill pb-page" href="#">Page</a></div></div><div class="block-title">Dark Theme</div><div class="block row"><div class="col-50"><a class="button button-fill pb-standalone-dark" href="#">Standalone</a></div><div class="col-50"><a class="button button-fill pb-popup-dark" href="#">Popup</a></div></div><div class="block"><a class="button button-fill pb-standalone-captions" href="#">With Captions</a></div><div class="block"><a class="button button-fill pb-standalone-video" href="#">With Video</a></div></div></div></div></div><script type="text/javascript" src="../../packages/core/js/framework7.bundle.min.js"></script><script>var theme = 'ios';
+if (location.href.indexOf('theme=md') >= 0) theme = 'md';
+if (location.href.indexOf('theme=aurora') >= 0) theme = 'aurora';
+var plugin = {
+  params: {
+    theme: theme,
+    root: '#app',
+  }
+};
+if (Framework7.use) Framework7.use(plugin);
+else if (Framework7.Class && Framework7.Class.use) Framework7.Class.use(plugin);
+</script><script>var app = new Framework7();
+
+var $$ = Dom7;
+
+/*=== Default standalone ===*/
+var myPhotoBrowserStandalone = app.photoBrowser.create({
+    photos : [
+        'https://cdn.framework7.io/placeholder/sports-1024x1024-1.jpg',
+        'https://cdn.framework7.io/placeholder/sports-1024x1024-2.jpg',
+        'https://cdn.framework7.io/placeholder/sports-1024x1024-3.jpg',
+    ]
+});
+//Open photo browser on click
+$$('.pb-standalone').on('click', function () {
+    myPhotoBrowserStandalone.open();
+});
+
+/*=== Popup ===*/
+var myPhotoBrowserPopup = app.photoBrowser.create({
+    photos : [
+        'https://cdn.framework7.io/placeholder/sports-1024x1024-1.jpg',
+        'https://cdn.framework7.io/placeholder/sports-1024x1024-2.jpg',
+        'https://cdn.framework7.io/placeholder/sports-1024x1024-3.jpg',
+    ],
+    type: 'popup'
+});
+$$('.pb-popup').on('click', function () {
+    myPhotoBrowserPopup.open();
+});
+
+/*=== As Page ===*/
+var myPhotoBrowserPage = app.photoBrowser.create({
+    photos : [
+        'https://cdn.framework7.io/placeholder/sports-1024x1024-1.jpg',
+        'https://cdn.framework7.io/placeholder/sports-1024x1024-2.jpg',
+        'https://cdn.framework7.io/placeholder/sports-1024x1024-3.jpg',
+    ],
+    type: 'page',
+    pageBackLinkText: 'Back'
+});
+$$('.pb-page').on('click', function () {
+    myPhotoBrowserPage.open();
+});
+
+/*=== Standalone Dark ===*/
+var myPhotoBrowserDark = app.photoBrowser.create({
+    photos : [
+        'https://cdn.framework7.io/placeholder/sports-1024x1024-1.jpg',
+        'https://cdn.framework7.io/placeholder/sports-1024x1024-2.jpg',
+        'https://cdn.framework7.io/placeholder/sports-1024x1024-3.jpg',
+    ],
+    theme: 'dark'
+});
+$$('.pb-standalone-dark').on('click', function () {
+    myPhotoBrowserDark.open();
+});
+
+/*=== Popup Dark ===*/
+var myPhotoBrowserPopupDark = app.photoBrowser.create({
+    photos : [
+        'https://cdn.framework7.io/placeholder/sports-1024x1024-1.jpg',
+        'https://cdn.framework7.io/placeholder/sports-1024x1024-2.jpg',
+        'https://cdn.framework7.io/placeholder/sports-1024x1024-3.jpg',
+    ],
+    theme: 'dark',
+    type: 'popup'
+});
+$$('.pb-popup-dark').on('click', function () {
+    myPhotoBrowserPopupDark.open();
+});
+
+/*=== With Captions ===*/
+var myPhotoBrowserCaptions = app.photoBrowser.create({
+    photos : [
+        {
+            url: 'https://cdn.framework7.io/placeholder/sports-1024x1024-1.jpg',
+            caption: 'Caption 1 Text'
+        },
+        {
+            url: 'https://cdn.framework7.io/placeholder/sports-1024x1024-2.jpg',
+            caption: 'Second Caption Text'
+        },
+        // This one without caption
+        {
+            url: 'https://cdn.framework7.io/placeholder/sports-1024x1024-3.jpg',
+        },
+    ],
+    theme: 'dark',
+    type: 'standalone'
+});
+$$('.pb-standalone-captions').on('click', function () {
+    myPhotoBrowserCaptions.open();
+});
+
+/*=== With Video ===*/
+var myPhotoBrowserVideo = app.photoBrowser.create({
+    photos : [
+        {
+            html: '<iframe src="//www.youtube.com/embed/lmc21V-zBq0" frameborder="0" allowfullscreen></iframe>',
+            caption: 'Woodkid - Run Boy Run (Official HD Video)'
+        },
+        {
+            url: 'https://cdn.framework7.io/placeholder/sports-1024x1024-2.jpg',
+            caption: 'Second Caption Text'
+        },
+        {
+            url: 'https://cdn.framework7.io/placeholder/sports-1024x1024-3.jpg',
+        },
+    ],
+    theme: 'dark',
+    type: 'standalone'
+});
+$$('.pb-standalone-video').on('click', function () {
+    myPhotoBrowserVideo.open();
+});</script></body></html>

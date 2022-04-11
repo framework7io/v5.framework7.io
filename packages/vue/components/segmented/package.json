@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/segmented",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/segmented.js",
+  "module": "../../esm/components/segmented.js",
+  "jsnext:main": "../../esm/components/segmented.js"
+}

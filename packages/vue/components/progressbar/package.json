@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/progressbar",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/progressbar.js",
+  "module": "../../esm/components/progressbar.js",
+  "jsnext:main": "../../esm/components/progressbar.js"
+}

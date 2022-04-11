@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/stepper",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/stepper.js",
+  "module": "../../esm/components/stepper.js",
+  "jsnext:main": "../../esm/components/stepper.js"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/accordion",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/accordion.js",
+  "module": "../../esm/components/accordion.js",
+  "jsnext:main": "../../esm/components/accordion.js"
+}

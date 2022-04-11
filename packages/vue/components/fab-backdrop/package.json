@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/fab-backdrop",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/fab-backdrop.js",
+  "module": "../../esm/components/fab-backdrop.js",
+  "jsnext:main": "../../esm/components/fab-backdrop.js"
+}

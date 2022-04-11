@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/use-icon",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/use-icon.js",
+  "module": "../../esm/components/use-icon.js",
+  "jsnext:main": "../../esm/components/use-icon.js"
+}

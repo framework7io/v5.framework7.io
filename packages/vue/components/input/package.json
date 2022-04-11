@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/input",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/input.js",
+  "module": "../../esm/components/input.js",
+  "jsnext:main": "../../esm/components/input.js"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/card",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/card.js",
+  "module": "../../esm/components/card.js",
+  "jsnext:main": "../../esm/components/card.js"
+}

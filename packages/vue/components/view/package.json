@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/view",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/view.js",
+  "module": "../../esm/components/view.js",
+  "jsnext:main": "../../esm/components/view.js"
+}

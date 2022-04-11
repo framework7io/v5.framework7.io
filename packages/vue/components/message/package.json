@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/message",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/message.js",
+  "module": "../../esm/components/message.js",
+  "jsnext:main": "../../esm/components/message.js"
+}

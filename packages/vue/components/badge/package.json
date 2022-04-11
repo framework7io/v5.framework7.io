@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/badge",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/badge.js",
+  "module": "../../esm/components/badge.js",
+  "jsnext:main": "../../esm/components/badge.js"
+}

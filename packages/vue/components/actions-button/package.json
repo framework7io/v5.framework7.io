@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/actions-button",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/actions-button.js",
+  "module": "../../esm/components/actions-button.js",
+  "jsnext:main": "../../esm/components/actions-button.js"
+}

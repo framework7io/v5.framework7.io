@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/routable-modals",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/routable-modals.js",
+  "module": "../../esm/components/routable-modals.js",
+  "jsnext:main": "../../esm/components/routable-modals.js"
+}

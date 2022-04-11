@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/skeleton-image",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/skeleton-image.js",
+  "module": "../../esm/components/skeleton-image.js",
+  "jsnext:main": "../../esm/components/skeleton-image.js"
+}

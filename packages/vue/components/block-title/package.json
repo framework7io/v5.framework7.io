@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/block-title",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/block-title.js",
+  "module": "../../esm/components/block-title.js",
+  "jsnext:main": "../../esm/components/block-title.js"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/messagebar-attachment",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/messagebar-attachment.js",
+  "module": "../../esm/components/messagebar-attachment.js",
+  "jsnext:main": "../../esm/components/messagebar-attachment.js"
+}

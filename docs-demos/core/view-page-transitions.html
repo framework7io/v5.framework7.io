@@ -1,0 +1,41 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><title>My App</title><link rel="stylesheet" href="../../packages/core/css/framework7.bundle.min.css"><link rel="stylesheet" href="../../css/framework7-icons.css"><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></head><body><div id="app"><div class="view view-main view-init"><div class="page"><div class="navbar"><div class="navbar-bg"></div><div class="navbar-inner sliding"><div class="title">Page Transitions</div></div></div><div class="page-content"><div class="list links-list"><ul><li><a href="/page-transitions/f7-circle" data-transition="f7-circle">f7-circle</a></li><li><a href="/page-transitions/f7-cover" data-transition="f7-cover">f7-cover</a></li><li><a href="/page-transitions/f7-cover-v" data-transition="f7-cover-v">f7-cover-v</a></li><li><a href="/page-transitions/f7-dive" data-transition="f7-dive">f7-dive</a></li><li><a href="/page-transitions/f7-fade" data-transition="f7-fade">f7-fade</a></li><li><a href="/page-transitions/f7-flip" data-transition="f7-flip">f7-flip</a></li><li><a href="/page-transitions/f7-parallax" data-transition="f7-parallax">f7-parallax</a></li><li><a href="/page-transitions/f7-push" data-transition="f7-push">f7-push</a></li></ul></div></div></div></div></div><script type="text/javascript" src="../../packages/core/js/framework7.bundle.min.js"></script><script>var theme = 'ios';
+if (location.href.indexOf('theme=md') >= 0) theme = 'md';
+if (location.href.indexOf('theme=aurora') >= 0) theme = 'aurora';
+var plugin = {
+  params: {
+    theme: theme,
+    root: '#app',
+  }
+};
+if (Framework7.use) Framework7.use(plugin);
+else if (Framework7.Class && Framework7.Class.use) Framework7.Class.use(plugin);
+</script><script>var app = new Framework7({
+  routes: [
+    {
+      path: '/page-transitions/:effect',
+      component: {
+        template: `
+          <div class="page">
+            <div class="navbar">
+              <div class="navbar-bg"></div>
+              <div class="navbar-inner sliding">
+                <div class="left">
+                  <a href="#" class="link back">
+                    <i class="icon icon-back"></i>
+                    <span class="if-not-md">Back</span>
+                  </a>
+                </div>
+                <div class="title">{{$f7route.params.effect}}</div>
+              </div>
+            </div>
+            <div class="page-content">
+              <div class="block block-strong text-align-center">
+                <p>This page was loaded with <b>{{$f7route.params.effect}}</b> transition.</p>
+              </div>
+            </div>
+          </div>
+        `,
+      },
+    },
+  ]
+});</script></body></html>

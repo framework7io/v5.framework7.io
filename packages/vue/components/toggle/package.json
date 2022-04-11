@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/toggle",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/toggle.js",
+  "module": "../../esm/components/toggle.js",
+  "jsnext:main": "../../esm/components/toggle.js"
+}

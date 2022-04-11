@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/actions",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/actions.js",
+  "module": "../../esm/components/actions.js",
+  "jsnext:main": "../../esm/components/actions.js"
+}

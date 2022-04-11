@@ -1,0 +1,236 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><title>My App</title><link rel="stylesheet" href="../../packages/core/css/framework7.bundle.min.css"><link rel="stylesheet" href="../../css/framework7-icons.css"><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></head><body><div id="app"></div><script src="https://unpkg.com/@babel/standalone/babel.min.js"></script><script src="https://unpkg.com/react@16.4.1/umd/react.production.min.js"></script><script src="https://unpkg.com/react-dom@16.4.1/umd/react-dom.production.min.js"></script><script src="../../packages/react/framework7-react.bundle.min.js"></script><script src="../../packages/core/js/framework7.bundle.min.js"></script><script type="text/babel">class AppComponent extends React.Component {
+  constructor() {
+    super();
+
+    this.state = {
+      priceMin: 200,
+      priceMax: 400,
+    };
+  }
+  onPriceChange(values) {
+    this.setState({
+      priceMin: values[0],
+      priceMax: values[1],
+    });
+  }
+  componentDidMount() {
+    setTimeout(() => {
+      this.$$('.range-slider').each((index, el) => {
+        this.$f7.range.get(el).calcSize();
+        this.$f7.range.get(el).layout();
+      })
+    }, 0);
+  }
+  render() {
+    return (
+      <App>
+        <View main>
+          <Page>
+            <Navbar title="Range Slider"></Navbar>
+
+            <BlockTitle>Volume</BlockTitle>
+            <List simpleList>
+              <ListItem>
+                <ListItemCell className="width-auto flex-shrink-0">
+                  <Icon ios="f7:speaker_fill" aurora="f7:speaker_fill" md="material:volume_mute"></Icon>
+                </ListItemCell>
+                <ListItemCell className="flex-shrink-3">
+                  <Range
+                    min={0}
+                    max={100}
+                    step={1}
+                    value={10}
+                  ></Range>
+                </ListItemCell>
+                <ListItemCell className="width-auto flex-shrink-0">
+                  <Icon ios="f7:speaker_3_fill" aurora="f7:speaker_3_fill" md="material:volume_up"></Icon>
+                </ListItemCell>
+              </ListItem>
+            </List>
+
+            <BlockTitle>Brightness</BlockTitle>
+            <List simpleList>
+              <ListItem>
+                <ListItemCell className="width-auto flex-shrink-0">
+                  <Icon ios="f7:sun_min" aurora="f7:sun_min" md="material:brightness_low"></Icon>
+                </ListItemCell>
+                <ListItemCell className="flex-shrink-3">
+                  <Range
+                    min={0}
+                    max={100}
+                    step={1}
+                    value={50}
+                    label={true}
+                    color="orange"
+                  ></Range>
+                </ListItemCell>
+                <ListItemCell className="width-auto flex-shrink-0">
+                  <Icon ios="f7:sun_max_fill" aurora="f7:sun_max_fill" md="material:brightness_high"></Icon>
+                </ListItemCell>
+              </ListItem>
+            </List>
+
+            <BlockTitle className="display-flex justify-content-space-between">Price Filter <span>${this.state.priceMin} - ${this.state.priceMax}</span></BlockTitle>
+            <List simpleList>
+              <ListItem>
+                <ListItemCell className="width-auto flex-shrink-0">
+                  <Icon ios="f7:money_dollar_circle" aurora="f7:money_dollar_circle" md="material:attach_money"></Icon>
+                </ListItemCell>
+                <ListItemCell className="flex-shrink-3">
+                  <Range
+                    min={0}
+                    max={500}
+                    step={1}
+                    value={[this.state.priceMin, this.state.priceMax]}
+                    label={true}
+                    dual={true}
+                    color="green"
+                    onRangeChange={this.onPriceChange.bind(this)}
+                  ></Range>
+                </ListItemCell>
+                <ListItemCell className="width-auto flex-shrink-0">
+                  <Icon ios="f7:money_dollar_circle_fill" aurora="f7:money_dollar_circle_fill" md="material:monetization_on"></Icon>
+                </ListItemCell>
+              </ListItem>
+            </List>
+
+            <BlockTitle>With Scale</BlockTitle>
+            <Block strong>
+              <Range
+                min={0}
+                max={100}
+                label={true}
+                step={5}
+                value={25}
+                scale={true}
+                scaleSteps={5}
+                scaleSubSteps={4}
+              />
+            </Block>
+
+            <BlockTitle>Vertical</BlockTitle>
+            <Block strong className="display-flex justify-content-center">
+              <Range
+                className="margin-right"
+                style={{height: '160px'}}
+                vertical={true}
+                min={0}
+                max={100}
+                label={true}
+                step={1}
+                value={25}
+              />
+              <Range
+                className="margin-horizontal"
+                style={{height: '160px'}}
+                vertical={true}
+                min={0}
+                max={100}
+                label={true}
+                step={1}
+                value={50}
+              />
+              <Range
+                className="margin-horizontal"
+                style={{height: '160px'}}
+                vertical={true}
+                min={0}
+                max={100}
+                label={true}
+                step={1}
+                value={75}
+              />
+              <Range
+                className="margin-left"
+                style={{height: '160px'}}
+                dual={true}
+                vertical={true}
+                min={0}
+                max={100}
+                label={true}
+                step={1}
+                value={[25, 75]}
+              />
+            </Block>
+
+            <BlockTitle>Vertical Reversed</BlockTitle>
+            <Block strong className="display-flex justify-content-center">
+              <Range
+                className="margin-right"
+                color="red"
+                style={{height: '160px'}}
+                vertical={true}
+                verticalReversed={true}
+                min={0}
+                max={100}
+                label={true}
+                step={1}
+                value={25}
+              />
+              <Range
+                className="margin-horizontal"
+                color="red"
+                style={{height: '160px'}}
+                vertical={true}
+                verticalReversed={true}
+                min={0}
+                max={100}
+                label={true}
+                step={1}
+                value={50}
+              />
+              <Range
+                className="margin-horizontal"
+                color="red"
+                style={{height: '160px'}}
+                vertical={true}
+                verticalReversed={true}
+                min={0}
+                max={100}
+                label={true}
+                step={1}
+                value={75}
+              />
+              <Range
+                className="margin-left"
+                color="red"
+                style={{height: '160px'}}
+                dual={true}
+                vertical={true}
+                verticalReversed={true}
+                min={0}
+                max={100}
+                label={true}
+                step={1}
+                value={[25, 75]}
+              />
+            </Block>
+          </Page>
+        </View>
+      </App>
+    )
+  }
+}</script><script>var theme = 'ios';
+if (location.href.indexOf('theme=md') >= 0) theme = 'md';
+if (location.href.indexOf('theme=aurora') >= 0) theme = 'aurora';
+
+if (Framework7.use) Framework7.use(Framework7React, { theme: theme });
+else if (Framework7.Class && Framework7.Class.use) Framework7.Class.use(Framework7React, { theme: theme });
+
+var plugin = {
+  params: {
+    theme: theme,
+  }
+};
+
+if (Framework7.use) Framework7.use(plugin);
+else if (Framework7.Class && Framework7.Class.use) Framework7.Class.use(plugin);
+
+window.onload = function () {
+  if (typeof AppComponent !== 'undefined') {
+    ReactDOM.render(
+      React.createElement(AppComponent),
+      document.getElementById('app')
+    );
+  }
+}</script></body></html>

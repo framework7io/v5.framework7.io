@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/row",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/row.js",
+  "module": "../../esm/components/row.js",
+  "jsnext:main": "../../esm/components/row.js"
+}

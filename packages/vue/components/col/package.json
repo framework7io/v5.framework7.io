@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/col",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/col.js",
+  "module": "../../esm/components/col.js",
+  "jsnext:main": "../../esm/components/col.js"
+}

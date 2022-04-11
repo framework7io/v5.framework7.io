@@ -1,0 +1,8 @@
+{
+  "name": "framework7-vue/page",
+  "private": true,
+  "sideEffects": false,
+  "main": "../../cjs/components/page.js",
+  "module": "../../esm/components/page.js",
+  "jsnext:main": "../../esm/components/page.js"
+}
